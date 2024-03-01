@@ -1,0 +1,39 @@
+<header>
+  <div class="container-fluid">
+   <div class="row">
+       <div class="col-4 d-flex" style="color: aliceblue;">
+           <img  src="https://t4.ftcdn.net/jpg/02/58/94/23/240_F_258942359_KKkwWxwWHpSyfzkX0wFeUZIJK9jvGwMQ.jpg" alt="" style="margin-right: 15px;">
+           <h2>contact us via social media </h2>
+       </div>
+       <div class="col-3 d-flex">
+           <a  href="https://www.facebook.com/" target="_blank">
+           <i class="fa-brands fa-facebook fa-3x" style="margin-right: 15px;"></i>
+            </a>
+           <a href="https://www.instagram.com/" target="_blank">
+           <i class="fa-brands fa-instagram fa-3x" style="margin-right: 15px;"></i>
+           </a>
+           <a href="https://www.linkedin.com/" target="_blank">
+           <i class="fa-brands fa-linkedin fa-3x"></i>
+           </a>
+       </div>
+       <div class="col-3 d-flex">
+           <form class="d-flex">
+            <input [(ngModel)]="searchTerm" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button (click)="search()" class="btn btn-outline-success" type="submit">Search</button> 
+            <ul *ngIf="searchResults.length > 0">
+                <li *ngFor="let result of searchResults">{{ result }}</li>
+              </ul>
+             </form>
+       </div>
+       <div class="col-2  d-flex justify-content-end">
+        
+        <a routerLink="/panier" class="nav-link active"><i class="fas fa-shopping-cart fa-2x" aria-hidden="true" style="color: aliceblue; margin-right: 30px;"></i></a>
+<a routerLink="/subscribe" class="nav-link active"><i class="fas fa-user-plus fa-2x" aria-hidden="true" style="color: aliceblue; margin-right: 30px;"></i></a>
+<a routerLink="/ajout" class="nav-link active"><i class="fas fa-power-off fa-2x" style="color: aliceblue; margin-left: 0px;"></i></a>
+
+       </div>
+   </div>
+
+  </div>
+
+</header>

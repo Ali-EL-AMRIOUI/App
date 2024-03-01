@@ -1,0 +1,96 @@
+<div class="container">
+            <div class="row" >
+                <div class="col-4">
+                    <label> <strong> My VMA:</strong></label>
+                    <input [(ngModel)]="vma"  type="number" placeholder="Enter your VMA">
+                </div>
+                <div class="col-4">
+                    <input type="text"  class="form-control" placeholder="your name">
+                </div>
+                <div class="col-4">
+                    <input type="date" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <button (click)="getCalculate()" class="btn btn-success">Calculate</button>
+                </div>
+                <div class="col-2">
+                    <button (click)="getDelete()" class="btn btn-success">delete</button>
+                </div>
+                
+                <div class="col-2">
+                    <button  type="submit" class="btn btn-success" >to print</button>
+                </div>
+            </div>
+            <h2 class="text-center"> <strong>The different training paces for your VMA:</strong></h2>
+            <p style="color:blue; font-size:xx-large"> In short intervals:</p>
+            <div class="row">
+                <div class="col-1"> Meters</div>
+                <div class="col-1" *ngFor="let prc of ListPourcentage" >  {{prc}}% </div>
+            </div>
+            <div class="row" *ngFor="let dis of ListDistance">
+                    <div class="col-1"> {{dis}}m</div>
+                    <div class="col-1" *ngFor="let prc of ListPourcentage">
+                         <input  [(ngModel)]="result"> 
+                    </div>
+            </div>
+              <p style="color:blue; font-size:xx-large">In average split:</p>
+
+            <div class="row">
+                    <div class="col-1"> Meters</div>
+                    <div class="col-1" *ngFor="let prc of ListPourcentage" >  {{prc}}% </div>
+            </div>
+            <div class="row" *ngFor="let dis of ListDistance">
+                <div class="col-1"> {{dis}}m</div>
+                <div class="col-1" *ngFor="let prc of ListPourcentage" >
+                     <input  [value]="result[dis][prc]" ></div>
+            </div>
+
+                <p style="color:blue; font-size:xx-large">Long split:</p>
+
+            <div class="row">
+                    <div class="col-1"> Meters</div>
+                    <div class="col-1" *ngFor="let prc of ListPourcentage" >  {{prc}}% </div>
+             </div>
+            <div class="row" *ngFor="let dis of ListDistance">
+                <div class="col-1"> {{dis}}m</div>
+                <div class="col-1" *ngFor="let prc of ListPourcentage" > 
+                    <input  [value]="result[dis][prc]"></div>
+            </div>
+          
+
+ </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

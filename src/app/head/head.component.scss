@@ -1,0 +1,91 @@
+
+.container-fluid {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: large;
+    margin-top: 5px;
+    height: 60px;
+    margin-left:0px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background: black;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.dropdown:hover{
+    transform: scale(1.2);
+    
+
+}
+
+.dropdown a:hover {
+    transform: scale(1);
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    background-color: rgb(86, 72, 72);
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    font-size: large;
+}
+.dropdown-toggle:hover {
+    transform:scale(1.2);
+    color: aliceblue;
+    
+
+}
+
+.dropdown-toggle::after {
+    /* Display or style as needed */
+    background-color: rgb(31, 39, 33);
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: rgb(31, 39, 33);
+    padding: 10px;
+    list-style: none;
+    border-radius: 15px;
+    margin-left: 4px;
+    width: 200px;
+    text-align: center;
+    
+}
+
+.dropdown-menu li {
+    margin-top: 10px;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.dropdown-menu a:hover {
+    transform: scale(1.3);
+    transition: 0.1s;
+    color: rgb(41, 26, 26);
+}
+
+.dropdown-toggle::after {
+    content: none;
+    background-image: none;
+}
+

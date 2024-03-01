@@ -1,0 +1,81 @@
+
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-2">
+     <app-menu> </app-menu>
+      </div>
+      <div class="col-10">
+
+<div class="container">
+    <div class="card">
+        <div class="card-header text-center">
+        <h1 class="text-center">Calculating your average running speed:</h1> </div>
+        <div class="card-body  justify-content-center align-items-center">
+            <div class="row" style="justify-content: space-around;">
+                <p style="margin-left: 0px;"><strong> Race distance:</strong> </p>
+
+                <div class="col-12">
+                    <label>Enter number of meters:</label>
+                    <input [(ngModel)]="meters" type="number" placeholder="0"> 
+            </div>
+            
+            <strong><p>Time completed:</p></strong>
+
+            <div class="row d-flex">
+                <div class="col-4">
+                    <label>Enter number of hours</label>
+                    <input    type="number" placeholder="0" class="form-control" min="0" max="30">
+                </div>
+                <div class="col-4">
+                    <label>Enter number of minutes</label>
+                    <input [(ngModel)]="minutes" type="number" placeholder="0" class="form-control"min="0" max="59">
+                </div>
+                <div class="col-4">
+                    <label>Enter number of seconds</label>
+                    <input [(ngModel)]="seconds" type="number" placeholder="0" class="form-control" min="0" max="59">
+                </div>
+                    
+                
+            </div>
+            <div class="row">
+                <div class="col-6" >
+                  <label><strong>Average speed: km/h</strong></label>
+                  <input [(ngModel)]="averageSpeed" type="text">
+                </div>
+                <div class="col-6" >
+                    <label><strong>Average time per km: min sec</strong> </label> 
+                    <input [(ngModel)]="averageTimePerKm" type="text" class="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <button (click)="getResult()" type="submit" class="btn btn-success text center"> calculate</button>
+
+                </div>
+                <div class="col-4"></div>
+
+
+            </div>
+
+
+        </div>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  
+</div>
+

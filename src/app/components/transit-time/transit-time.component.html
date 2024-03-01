@@ -1,0 +1,855 @@
+
+<div class="container-fluid">
+    <div class="row">
+     
+      <div class="col-12">
+
+<div class="container">
+    <div class="card">
+        <div class="card-header text-center">
+        <h1 class="text-center">Calculating your average running speed:</h1> </div>
+        <div class="card-body  justify-content-center align-items-center">
+            <div class="row" style="margin: 0px;">
+                <div class="col-4">
+                    <label> <strong> My VMA:</strong></label>
+                    <input [(ngModel)]="vma" type="text"> <strong>km/h</strong>
+                </div>
+                <div class="col-4">
+                    <input (ngModel)="name" type="name" class="form-control" placeholder="your name">
+                </div>
+                <div class="col-4">
+                    <input (ngModel)="date" type="date" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <button (click)="getCalculate" type="submit" class="btn btn-success" >calculate</button>
+                </div>
+                <div class="col-2">
+                    <button (click)="getDelete" type="submit" class="btn btn-success" >to erase</button>
+                </div>
+                <div class="col-2">
+                    <button (click)="getPrint" type="submit" class="btn btn-success" >to print</button>
+                </div>
+            </div>
+            <h2 class="text-center"> <strong>The different training paces for your VMA:</strong></h2>
+            
+            <p style="color:blue; font-size:xx-large"> In short intervals:</p>
+            <div class="row">
+                <div class="col-1 text-center">
+                    Meters
+                </div>
+                <div class="col-1">
+                    <p>85%</p>
+               </div>
+                <div class="col-1">
+                    <p>90%</p>
+                </div>
+                <div class="col-1">
+                    <p>95%</p>
+                </div>
+                <div class="col-1">
+                    <p>100%</p>
+                </div>
+                <div class="col-1">
+                    <p>110%</p>
+                </div>
+                <div class="col-1">
+                    <p>120%</p>
+                </div>
+                <div class="col-1">
+                    <p>130%</p>
+                </div>
+                <div class="col-1">
+                    <p>140%</p>
+                </div>
+                <div class="col-1">
+                    150%
+                </div>
+            </div>
+            <div *ngFor="let tim of " class="row">
+                <div class="col-1">
+                    80 m
+                </div>
+                <div class="col-1">
+                    <input  type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input (ngModel)="tim"  type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input  type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input   type="text">
+                </div>
+                <div class="col-1">
+                    <input  type="text">
+                </div>
+                <div class="col-1">
+                    <input   type="text">
+                </div>
+                <div class="col-1">
+                    <input  type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    100 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    150 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    200 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    250 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    300 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    350 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    350 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    400 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            <p style="color:blue; font-size:xx-large">In average split:</p>
+
+            <div class="row">
+                <div class="col-1 text-center">
+                    Meters
+                </div>
+                <div class="col-1">
+                    <p>75%</p>
+               </div>
+                <div class="col-1">
+                    <p>80%</p>
+                </div>
+                <div class="col-1">
+                    <p>85%</p>
+                </div>
+                <div class="col-1">
+                    <p>90%</p>
+                </div>
+                <div class="col-1">
+                    <p>95%</p>
+                </div>
+                <div class="col-1">
+                    <p>100%</p>
+                </div>
+                <div class="col-1">
+                    <p>105%</p>
+                </div>
+                <div class="col-1">
+                    <p>110%</p>
+                </div>
+                <div class="col-1">
+                    <p>115%</p>
+                </div>
+                <div class="col-1">
+                    <p>120%</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    50 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    600 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-1">
+                    700 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    800 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    1000 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            <p style="color:blue; font-size:xx-large">Long split:</p>
+
+
+            <div class="row">
+                <div class="col-1 text-center">
+                    Meters
+                </div>
+                <div class="col-1">
+                    <p>70%</p>
+               </div>
+                <div class="col-1">
+                    <p>75%</p>
+                </div>
+                <div class="col-1">
+                    <p>80%</p>
+                </div>
+                <div class="col-1">
+                    <p>85%</p>
+                </div>
+                <div class="col-1">
+                    <p>90%</p>
+                </div>
+                <div class="col-1">
+                    <p>95%</p>
+                </div>
+                <div class="col-1">
+                    <p>100%</p>
+                </div>
+                <div class="col-1">
+                    <p>105%</p>
+                </div>
+                <div class="col-1">
+                    <p>110%</p>
+                </div>
+                <div class="col-1">
+                    <p>120%</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    1200 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    1500 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-1">
+                    2000 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    2500 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    3000 m
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+
+                </div>
+                <div class="col-1">
+                    <input type="text"> 
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+                <div class="col-1">
+                    <input type="text">
+                </div>
+            </div>
+        
+
+
+        </div>
+    
+   </div> 
+   
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  
+</div>
+
+</div>
